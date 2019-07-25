@@ -1,4 +1,5 @@
 ﻿# RavencoinLib
+ [![Build Status](https://dev.azure.com/tech0152/RavencoinLib/_apis/build/status/winevaultteam.ravencoinlib?branchName=master)](https://dev.azure.com/tech0152/RavencoinLib/_build/latest?definitionId=1&branchName=master)
 
 **.NET Ravencoin library**
 
