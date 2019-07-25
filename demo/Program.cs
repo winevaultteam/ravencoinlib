@@ -7,17 +7,17 @@ using System.Configuration;
 using System.Globalization;
 using System.Linq;
 using System.Reflection;
-using BitcoinLib.Auxiliary;
-using BitcoinLib.ExceptionHandling.Rpc;
-using BitcoinLib.Responses;
-using BitcoinLib.Services.Coins.Base;
-using BitcoinLib.Services.Coins.Bitcoin;
+using RavencoinLib.Auxiliary;
+using RavencoinLib.ExceptionHandling.Rpc;
+using RavencoinLib.Responses;
+using RavencoinLib.Services.Coins.Base;
+using RavencoinLib.Services.Coins.Ravencoin;
 
 namespace ConsoleClient
 {
     internal sealed class Program
     {
-        private static readonly ICoinService CoinService = new BitcoinService(useTestnet: true);
+        private static readonly ICoinService CoinService = new RavencoinService(useTestnet: true);
 
         private static void Main()
         {
