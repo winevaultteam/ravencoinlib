@@ -6,7 +6,7 @@
 The Ravencoin library is a .NET library for Ravencoin and has a focus on the assets handling.
 
 ## Thanks to
-Crypten for making the [RavencoinLib](https://github.com/cryptean/RavencoinLib) which this project is a fork of.
+Crypten for making the [BitcoinLib](https://github.com/cryptean/bitcoinlib) which this project is a fork of.
 Since Ravencoin is based on Bitcoin it's possible to use parts of a Bitcoin library to interact with Ravencoin, but with Ravencoins focus on assets it was a need for a more adjusted library for Ravencoin.
 
 ## License
@@ -42,13 +42,13 @@ Sample configuration:
       <add key="RpcRequestTimeoutInSeconds" value="10" />
       <!-- Shared RPC settings end -->
 
-      <!-- Bitcoin settings start -->
-      <add key="Bitcoin_DaemonUrl" value="http://localhost:8332" />
-      <add key="Bitcoin_DaemonUrl_Testnet" value="http://localhost:18332" />
-      <add key="Bitcoin_WalletPassword" value="MyWalletPassword" />
-      <add key="Bitcoin_RpcUsername" value="MyRpcUsername" />
-      <add key="Bitcoin_RpcPassword" value="MyRpcPassword" />
-      <!-- Bitcoin settings end -->
+      <!-- Ravencoin settings start -->
+      <add key="Ravencoin_DaemonUrl" value="http://localhost:8332" />
+      <add key="Ravencoin_DaemonUrl_Testnet" value="http://localhost:18332" />
+      <add key="Ravencoin_WalletPassword" value="MyWalletPassword" />
+      <add key="Ravencoin_RpcUsername" value="MyRpcUsername" />
+      <add key="Ravencoin_RpcPassword" value="MyRpcPassword" />
+      <!-- Ravencoin settings end -->
 
     <!-- RavencoinLib settings end -->
   </appSettings>
