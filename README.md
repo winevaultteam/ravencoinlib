@@ -7,7 +7,7 @@
 The Ravencoin library is a .NET library for Ravencoin and has a focus on the assets handling.
 
 ## Thanks to
-Crypten for making the [BitcoinLib](https://github.com/cryptean/bitcoinlib) which this project is a fork of.
+Big thanks to Crypten for making the [BitcoinLib](https://github.com/cryptean/bitcoinlib) which this project is a fork of.
 Since Ravencoin is based on Bitcoin it's possible to use parts of a Bitcoin library to interact with Ravencoin, but with Ravencoins focus on assets it was a need for a more adjusted library for Ravencoin.
 
 ## License
