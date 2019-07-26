@@ -147,7 +147,6 @@ namespace RavencoinLib.RPC.Specifications
         getmempoolentry,//: 'str',
         getspentinfo,//: 'obj',
         getwork,//: '',
-        importprivKey,//: 'str str bool',
         invalidateblock,//: 'str',
         listmyassets,//: 'str str int str',
         listassets,//: 'str str int str',
