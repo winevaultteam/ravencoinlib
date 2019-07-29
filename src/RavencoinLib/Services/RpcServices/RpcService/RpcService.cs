@@ -2,6 +2,7 @@
 // See the accompanying file LICENSE for the Software License Aggrement
 
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -771,10 +772,67 @@ namespace RavencoinLib.Services
         {
             return _rpcConnector.MakeRequest<string>(RpcMethods.walletpassphrasechange, oldPassphrase, newPassphrase);
         }
+        
+        #region ravencoin assets
 
-        public override string ToString()
+        public List<string> ListMyAssets(string asset)
         {
-            return Parameters.CoinLongName;
+            return _rpcConnector.MakeRequest<List<string>>(RpcMethods.listmyassets, asset);
         }
+
+        public List<string> ListAssets(string asset)
+        {
+            return _rpcConnector.MakeRequest<List<string>>(RpcMethods.listassets, asset);
+        }
+
+        public List<ListAddressesByAssetResponse> ListAddressesByAsset(string asset, bool onlyTotal = false, int count = 50000, int start = 0)
+        {
+            return _rpcConnector.MakeRequest<List<ListAddressesByAssetResponse>>(RpcMethods.listaddressesbyasset, asset,
+                onlyTotal, count, start);
+        }
+
+        public List<ListAssetBalancesByAddressResponse> ListAssetBalancesByAddress(string ravenCoinAddress, bool onlyTotal = false, int count = 50000, int start = 0)
+        {
+            return _rpcConnector.MakeRequest<List<ListAssetBalancesByAddressResponse>>(
+                RpcMethods.listassetbalancesbyaddress, ravenCoinAddress, onlyTotal, count, start);
+        }
+
+        public GetAssetDataResponse GetAssetData(string assetName)
+        {
+            return _rpcConnector.MakeRequest<GetAssetDataResponse>(RpcMethods.getassetdata, assetName);
+        }
+
+        public TransferResult Transfer(string assetName, double qty, string toAddress)
+        {
+            return _rpcConnector.MakeRequest<TransferResult>(RpcMethods.transfer, assetName, qty, toAddress);
+        }
+
+        public string Reissue(string assetName, int qty, string toAddress, string changeAddress = "", bool reIssuable = true,
+            int newUnit = -1, string newIpfs = "")
+        {
+            return _rpcConnector.MakeRequest<string>(RpcMethods.reissue, assetName, qty, toAddress, changeAddress,
+                reIssuable, newUnit, newIpfs);
+        }
+
+        public string IssueUnique(string rootName, ArrayList assetTags, ArrayList ipfsHashes = null, string toAddress = "",
+            string changeAddress = "")
+        {
+            return _rpcConnector.MakeRequest<string>(RpcMethods.issueunique, rootName, assetTags, ipfsHashes, toAddress,
+                changeAddress);
+        }
+
+        public string Issue(string assetName, int qty = 1, string toAddress = "", string changeAddress = "", int units = 0,
+            bool reIssuable = true, bool hasIpfs = false, string ipfsHash = "")
+        {
+            return _rpcConnector.MakeRequest<string>(RpcMethods.issue, assetName, qty, toAddress, changeAddress, units,
+                reIssuable, hasIpfs, ipfsHash);
+        }
+
+        public List<string> GetCacheInfo()
+        {
+            return _rpcConnector.MakeRequest<List<string>>(RpcMethods.getcacheinfo);
+        }
+        
+        #endregion
     }
 }

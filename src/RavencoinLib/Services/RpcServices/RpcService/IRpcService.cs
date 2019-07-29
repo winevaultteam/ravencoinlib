@@ -1,6 +1,7 @@
-﻿// Copyright (c) 2014 - 2016 George Kimionis
+﻿// Copyright (c) 2014 - 2016 George Kimionis, Modified 2019 WiVTech
 // See the accompanying file LICENSE for the Software License Aggrement
 
+using System.Collections;
 using System.Collections.Generic;
 using RavencoinLib.Requests.AddNode;
 using RavencoinLib.Requests.CreateRawTransaction;
@@ -169,18 +170,17 @@ namespace RavencoinLib.Services.RpcServices.RpcService
   //  { "assets",   "reissue",                    &reissue,                    {"asset_name", "qty", "to_address", "change_address", "reissuable", "new_unit", "new_ipfs"}},
   //  { "assets",   "listassets",                 &listassets,                 {"asset", "verbose", "count", "start"}},
   //  { "assets",   "getcacheinfo",               &getcacheinfo,               {}}
-
-        //object GetCacheInfo();//: '',
-        object ListMyAssets(string asset);//: 'str str int str',
-        List<string> ListAssets(string asset);//: 'str str int str',
-        List<ListAddressesByAssetResponse> ListAddressesByAsset(string asset);//: 'str',
-        List<ListAssetBalancesByAddressResponse> ListAssetBalancesByAddress(string ravencoinAddress);//: 'str',
-        GetAssetDataResponse GetAssetData(string assetName);//: 'str',
-        TransferResult Transfer(string asset_name, double qty, string ToAddress);//: 'str float str',
-        string Reissue(string assetName, double qty, string toAddress);//: 'str float str str bool float str',
-        object IssueUnique(string s1, string s2, string s3, string s4, string s5);//: 'str str str str str',
-        object Issue(string s1, double amount, string s2, string s3, double amount2, bool tf1, bool tf2, string s4);//: 'str float str str float bool bool str',
-        
+  
+        List<string> ListMyAssets(string asset); //TODO: make a version with verbose
+        List<string> ListAssets(string asset); //TODO: make a version with verbose
+        List<ListAddressesByAssetResponse> ListAddressesByAsset(string asset, bool onlyTotal = false, int count = 50000, int start = 0);
+        List<ListAssetBalancesByAddressResponse> ListAssetBalancesByAddress(string ravenCoinAddress, bool onlyTotal = false, int count = 50000, int start = 0);
+        GetAssetDataResponse GetAssetData(string assetName);
+        TransferResult Transfer(string assetName, double qty, string toAddress);
+        string Reissue(string assetName, int qty, string toAddress, string changeAddress = "", bool reIssuable = true, int newUnit = -1,  string newIpfs = "");
+        string IssueUnique(string rootName, ArrayList assetTags, ArrayList ipfsHashes = null, string toAddress = "", string changeAddress = "");
+        string Issue(string assetName, int qty = 1, string toAddress = "", string changeAddress = "", int units = 0, bool reIssuable = true, bool hasIpfs = false, string ipfsHash = "");
+        List<string> GetCacheInfo();      
         
         #endregion
     }

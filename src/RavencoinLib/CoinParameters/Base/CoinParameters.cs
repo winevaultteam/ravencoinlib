@@ -2,9 +2,11 @@
 // See the accompanying file LICENSE for the Software License Aggrement
 
 using System;
+using System.Collections.Generic;
 using System.Configuration;
 using System.Diagnostics;
 using RavencoinLib.Auxiliary;
+using RavencoinLib.Responses;
 using RavencoinLib.Services.Coins.Base;
 using RavencoinLib.Services.Coins.Ravencoin;
 
@@ -63,7 +65,7 @@ namespace RavencoinLib.Services
 								
 								
 
-                #region Smartcash
+                #region Ravencoin
 
                 else if (coinService is RavencoinService)
                 {
@@ -158,5 +160,6 @@ namespace RavencoinLib.Services
             public bool UseTestnet { get; set; }
             public string WalletPassword { get; set; }
         }
+        
     }
 }
