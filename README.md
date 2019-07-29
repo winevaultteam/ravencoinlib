@@ -44,8 +44,8 @@ Sample configuration:
       <!-- Shared RPC settings end -->
 
       <!-- Ravencoin settings start -->
-      <add key="Ravencoin_DaemonUrl" value="http://localhost:8332" />
-      <add key="Ravencoin_DaemonUrl_Testnet" value="http://localhost:18332" />
+      <add key="Ravencoin_DaemonUrl" value="http://localhost:18766" />
+      <add key="Ravencoin_DaemonUrl_Testnet" value="http://localhost:18766" />
       <add key="Ravencoin_WalletPassword" value="MyWalletPassword" />
       <add key="Ravencoin_RpcUsername" value="MyRpcUsername" />
       <add key="Ravencoin_RpcPassword" value="MyRpcPassword" />
