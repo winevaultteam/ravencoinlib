@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/.Rider2019.2/system/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.Rider2019.2/system/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_RavencoinLib.1011901155.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="RavencoinLib.sln" t="IncludeFlat" />
+      <e p="demo" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="DemoClient.csproj" t="IncludeRecursive" />
+        <e p="Program.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.0" t="Include">
+              <e p="DemoClient.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="src/RavencoinLib" t="IncludeRecursive">
+        <e p="Auxiliary" t="Include">
+          <e p="Encoders" t="Include">
+            <e p="ASCIIEncoder.cs" t="Include" />
+            <e p="DataEncoder.cs" t="Include" />
+            <e p="HexEncoder.cs" t="Include" />
+          </e>
+          <e p="GlobalConstants.cs" t="Include" />
+          <e p="Hashing.cs" t="Include" />
+          <e p="UnixTime.cs" t="Include" />
+        </e>
+        <e p="CoinParameters" t="Include">
+          <e p="Base" t="Include">
+            <e p="CoinConstants.cs" t="Include" />
+            <e p="CoinParameters.cs" t="Include" />
+            <e p="ICoinParameters.cs" t="Include" />
+          </e>
+          <e p="Ravencoin" t="Include">
+            <e p="IRavencoinConstants.cs" t="Include" />
+            <e p="RavencoinConstants.cs" t="Include" />
+          </e>
+        </e>
+        <e p="ExceptionHandling" t="Include">
+          <e p="RawTransactions" t="Include">
+            <e p="RawTransactionExcessiveFeeException.cs" t="Include" />
+            <e p="RawTransactionInvalidAmountException.cs" t="Include" />
+          </e>
+          <e p="Rpc" t="Include">
+            <e p="RpcException.cs" t="Include" />
+            <e p="RpcInternalServerErrorException.cs" t="Include" />
+            <e p="RpcRequestTimeoutException.cs" t="Include" />
+            <e p="RpcResponseDeserializationException.cs" t="Include" />
+          </e>
+          <e p="RpcExtenderService" t="Include">
+            <e p="GetAddressBalanceException.cs" t="Include" />
+          </e>
+        </e>
+        <e p="ExtensionMethods" t="Include">
+          <e p="CoinServiceExtensionMethods.cs" t="Include" />
+          <e p="DecimalExtensionMethods.cs" t="Include" />
+        </e>
+        <e p="RPC" t="Include">
+          <e p="Connector" t="Include">
+            <e p="IRpcConnector.cs" t="Include" />
+            <e p="RawRpcConnector.cs" t="Include" />
+            <e p="RpcConnector.cs" t="Include" />
+          </e>
+          <e p="RequestResponse" t="Include">
+            <e p="JsonRpcError.cs" t="Include" />
+            <e p="JsonRpcRequest.cs" t="Include" />
+            <e p="JsonRpcResponse.cs" t="Include" />
+          </e>
+          <e p="Specifications" t="Include">
+            <e p="RpcErrorCode.cs" t="Include" />
+            <e p="RpcMethods.cs" t="Include" />
+          </e>
+        </e>
+        <e p="RavencoinLib.csproj" t="IncludeRecursive" />
+        <e p="Requests" t="Include">
+          <e p="AddNode" t="Include">
+            <e p="NodeAction.cs" t="Include" />
+          </e>
+          <e p="CreateRawTransaction" t="Include">
+            <e p="CreateRawTransactionInput.cs" t="Include" />
+            <e p="CreateRawTransactionOutput.cs" t="Include" />
+            <e p="CreateRawTransactionRequest.cs" t="Include" />
+          </e>
+          <e p="SignRawTransaction" t="Include">
+            <e p="SigHashType.cs" t="Include" />
+            <e p="SignRawTransactionInput.cs" t="Include" />
+            <e p="SignRawTransactionRequest.cs" t="Include" />
+            <e p="SignRawTransactionWithKeyInput.cs" t="Include" />
+            <e p="SignRawTransactionWithKeyRequest.cs" t="Include" />
+            <e p="SignRawTransactionWithWalletInput.cs" t="Include" />
+            <e p="SignRawTransactionWithWalletRequest.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Responses" t="Include">
+          <e p="Bridges" t="Include">
+            <e p="ITransactionResponse.cs" t="Include" />
+          </e>
+          <e p="CreateMultiSigResponse.cs" t="Include" />
+          <e p="DecodeRawTransactionResponse.cs" t="Include" />
+          <e p="DecodeScriptResponse.cs" t="Include" />
+          <e p="EstimateSmartFeeResponse.cs" t="Include" />
+          <e p="GetAddedNodeInfoResponse.cs" t="Include" />
+          <e p="GetAddressInfoResponse.cs" t="Include" />
+          <e p="GetAddressesByLabelResponse.cs" t="Include" />
+          <e p="GetAssetDataResponse.cs" t="Include" />
+          <e p="GetBlockResponse.cs" t="Include" />
+          <e p="GetBlockTemplateResponse.cs" t="Include" />
+          <e p="GetBlockchainInfoResponse.cs" t="Include" />
+          <e p="GetChainTipsResponse.cs" t="Include" />
+          <e p="GetFundRawTransactionResponse.cs" t="Include" />
+          <e p="GetInfoResponse.cs" t="Include" />
+          <e p="GetMemPoolInfoResponse.cs" t="Include" />
+          <e p="GetMiningInfoResponse.cs" t="Include" />
+          <e p="GetNetTotalsResponse.cs" t="Include" />
+          <e p="GetNetworkInfoResponse.cs" t="Include" />
+          <e p="GetPeerInfoResponse.cs" t="Include" />
+          <e p="GetRawMemPoolResponse.cs" t="Include" />
+          <e p="GetRawTransactionResponse.cs" t="Include" />
+          <e p="GetTransactionResponse.cs" t="Include" />
+          <e p="GetTxOutSetInfoResponse.cs" t="Include" />
+          <e p="GetWalletInfoResponse.cs" t="Include" />
+          <e p="ListAddressGroupingsResponse.cs" t="Include" />
+          <e p="ListAddressesByAssetResponse.cs" t="Include" />
+          <e p="ListAssetBalancesByAddressResponse.cs" t="Include" />
+          <e p="ListReceivedByAccountResponse.cs" t="Include" />
+          <e p="ListReceivedByAddressResponse.cs" t="Include" />
+          <e p="ListReceivedByLabelResponse.cs" t="Include" />
+          <e p="ListSinceBlockResponse.cs" t="Include" />
+          <e p="ListTransactionsResponse.cs" t="Include" />
+          <e p="ListUnspentResponse.cs" t="Include" />
+          <e p="SharedComponents" t="Include">
+            <e p="Vin.cs" t="Include" />
+            <e p="Vout.cs" t="Include" />
+          </e>
+          <e p="SignRawTransactionResponse.cs" t="Include" />
+          <e p="SignRawTransactionWithKeyResponse.cs" t="Include" />
+          <e p="SignRawTransactionWithWalletResponse.cs" t="Include" />
+          <e p="TransferResult.cs" t="Include" />
+          <e p="ValidateAddressResponse.cs" t="Include" />
+        </e>
+        <e p="Services" t="Include">
+          <e p="Coins" t="Include">
+            <e p="Base" t="Include">
+              <e p="ICoinService.cs" t="Include" />
+            </e>
+            <e p="Ravencoin" t="Include">
+              <e p="IRavencoinService.cs" t="Include" />
+              <e p="RavencoinSerice.cs" t="Include" />
+            </e>
+          </e>
+          <e p="RpcServices" t="Include">
+            <e p="RpcExtenderService" t="Include">
+              <e p="IRpcExtenderService.cs" t="Include" />
+              <e p="RpcExtenderService.cs" t="Include" />
+            </e>
+            <e p="RpcService" t="Include">
+              <e p="IRpcService.cs" t="Include" />
+              <e p="RpcService.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.0" t="Include">
+              <e p="RavencoinLib.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+    </e>
+  </component>
+</project>
