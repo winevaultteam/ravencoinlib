@@ -179,7 +179,7 @@ namespace RavencoinLib.Services.RpcServices.RpcService
         TransferResult Transfer(string assetName, double qty, string toAddress);
         string Reissue(string assetName, int qty, string toAddress, string changeAddress = "", bool reIssuable = true, int newUnit = -1,  string newIpfs = "");
         string IssueUnique(string rootName, ArrayList assetTags, ArrayList ipfsHashes = null, string toAddress = "", string changeAddress = "");
-        string Issue(string assetName, int qty = 1, string toAddress = "", string changeAddress = "", int units = 0, bool reIssuable = true, bool hasIpfs = false, string ipfsHash = "");
+        List<string> Issue(string assetName, int qty = 1, string toAddress = "", string changeAddress = "", int units = 0, bool reIssuable = true, bool hasIpfs = false, string ipfsHash = null);
         List<string> GetCacheInfo();      
         
         #endregion

@@ -821,10 +821,10 @@ namespace RavencoinLib.Services
                 changeAddress);
         }
 
-        public string Issue(string assetName, int qty = 1, string toAddress = "", string changeAddress = "", int units = 0,
-            bool reIssuable = true, bool hasIpfs = false, string ipfsHash = "")
+        public List<string> Issue(string assetName, int qty = 1, string toAddress = "", string changeAddress = "", int units = 0,
+            bool reIssuable = true, bool hasIpfs = false, string ipfsHash = null)
         {
-            return _rpcConnector.MakeRequest<string>(RpcMethods.issue, assetName, qty, toAddress, changeAddress, units,
+            return _rpcConnector.MakeRequest<List<string>>(RpcMethods.issue, assetName, qty, toAddress, changeAddress, units,
                 reIssuable, hasIpfs, ipfsHash);
         }
 

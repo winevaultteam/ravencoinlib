@@ -18,6 +18,11 @@ namespace ConsoleClient
     internal sealed class Program
     {
         private static readonly ICoinService CoinService = new RavencoinService(useTestnet: true);
+        
+        //for assets
+        private static readonly bool runAssets = true;
+        private static readonly string issueAssetName = "MYTESTASSSETTXX8"; //Something unique. Uses A-Z 0-9
+        
 
         private static void Main()
         {
@@ -175,6 +180,13 @@ namespace ConsoleClient
                             Console.WriteLine(propertyInfo.Name + " : " + propertyInfo.GetValue(unspentResponse, null));
                         }
                     }
+                }
+                //run issuing assets
+                if (myBalance > 0 && runAssets)
+                {
+                    Console.WriteLine("\nIssue a new asset. assetName: {0}", issueAssetName);
+                    var issued = CoinService.Issue(issueAssetName, 1);
+                    Console.WriteLine("\nAsset issued,txId: {0}", issued[0]);
                 }
 
                 Console.ReadLine();

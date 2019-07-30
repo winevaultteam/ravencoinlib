@@ -29,6 +29,16 @@ tool you can execute:
 dotnet build
 ```
 
+##Raven.conf
+
+Sample conf:
+
+server=1
+listen=1
+rpcuser=MyRpcUsername
+rpcpassword=MyRpcPassword
+rpcallowip=127.0.0.1
+
 ## Configuration
 
 Sample configuration:
