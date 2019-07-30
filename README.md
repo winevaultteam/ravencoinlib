@@ -1,5 +1,5 @@
 ﻿# RavencoinLib
- [![Build Status](https://dev.azure.com/tech0152/RavencoinLib/_apis/build/status/winevaultteam.ravencoinlib?branchName=master)](https://dev.azure.com/tech0152/RavencoinLib/_build/latest?definitionId=1&branchName=master)
+[![Build Status](https://dev.azure.com/tech0152/RavencoinLib/_apis/build/status/wivtech.ravencoinlib?branchName=master)](https://dev.azure.com/tech0152/RavencoinLib/_build/latest?definitionId=2&branchName=master)
 
 **.NET Ravencoin library**
 
@@ -54,8 +54,8 @@ Sample configuration:
       <!-- Shared RPC settings end -->
 
       <!-- Ravencoin settings start -->
-      <add key="Ravencoin_DaemonUrl" value="http://localhost:8332" />
-      <add key="Ravencoin_DaemonUrl_Testnet" value="http://localhost:18332" />
+      <add key="Ravencoin_DaemonUrl" value="http://localhost:18766" />
+      <add key="Ravencoin_DaemonUrl_Testnet" value="http://localhost:18766" />
       <add key="Ravencoin_WalletPassword" value="MyWalletPassword" />
       <add key="Ravencoin_RpcUsername" value="MyRpcUsername" />
       <add key="Ravencoin_RpcPassword" value="MyRpcPassword" />
